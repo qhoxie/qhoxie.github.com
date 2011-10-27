@@ -1,0 +1,5 @@
+.examples span {
+	display: inline-block;
+	margin: 8px 5px;
+	font-size: 14px;
+}

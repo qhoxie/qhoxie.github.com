@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stopwatch &raquo; Live timers plugin for jQuery</title>
+    <link rel="stylesheet" href="../../css/main.css" type="text/css">
+    <link rel="stylesheet" href="../../css/project.css" type="text/css">
+    <link rel="stylesheet" href="stopwatch.css" type="text/css">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="https://raw.github.com/qhoxie/jquery.stopwatch/master/jquery.stopwatch.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('.timed').stopwatch();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>Stopwatch</h1>
+        <h2>Live-updating timers using unobtrusive JavaScript.</h2>
+      </div>
+
+      <div id="content">
+        <div class="section examples">
+          <h3>Examples</h3>
+          <div class="timed" data-began="Thu Oct 19 21:30:04 -0700 2011">
+            <span class="sw_day"></span>
+            <span class="sw_hour"></span>
+            <span class="sw_minute"></span>
+            <span class="sw_second"></span>
+          </div>
+        </div>
+        <div class="section usage">
+          <h3>Usage</h3>
+          <pre>&lt;div class=&quot;timed&quot; data-began=&quot;Thu Oct 19 21:30:04 -0700 2011&quot;&gt;
+  &lt;span class=&quot;sw_day&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;sw_hour&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;sw_minute&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;sw_second&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</pre>
+<pre>$('.foo').stopwatch({
+  interval: 1  // seconds
+});</pre>
+        </div>
+        <div class="section implementation">
+          <h3>Implementation</h3>
+          <p>Code is on github: <a href="http://github.com/qhoxie/jquery.stopwatch">qhoxie/jquery.stopwatch</a><p>
+          <p>By: <a href="http://qhoxie.com">Quin Hoxie</a><p>
+          <p>License: MIT<p>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
